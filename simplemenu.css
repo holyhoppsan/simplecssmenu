@@ -32,7 +32,6 @@ body {
     background-position: 0% -100%;
 }
 
-
 #menu-items:hover>.menu-item {
     opacity: 0.3;
 }
@@ -74,4 +73,42 @@ body {
     transition: opacity 800ms ease,
         background-size 800ms ease,
         background-position 800ms ease;
+}
+
+#menu[data-active-index="0"]>#menu-background-image {
+    background-position: center 45%;
+}
+
+#menu[data-active-index="1"]>#menu-background-image {
+    background-position: center 50%;
+}
+
+#menu[data-active-index="2"]>#menu-background-image {
+    background-position: center 55%;
+}
+
+#menu[data-active-index="3"]>#menu-background-image {
+    background-position: center 60%;
+}
+
+
+#menu-background-image {
+    background-image: url("https://images.unsplash.com/photo-1492496913980-501348b61469?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+    background-position: center 40%;
+    background-size: 110vmax;
+
+    position: absolute;
+    opacity: 0.15;
+
+    top: 0px;
+    left: 0px;
+
+    height: 100%;
+    width: 100%;
+
+    transition: opacity 800ms ease,
+        background-size 800ms ease,
+        background-position 800ms ease;
+
+    z-index: 0;
 }
